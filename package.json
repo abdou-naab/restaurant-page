@@ -1,0 +1,29 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": " creating a restaurant page using webpack @ the odin project ",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdou-naab/restaurant-page.git"
+  },
+  "keywords": [
+    "webpack",
+    "restaurant page",
+    "JS"
+  ],
+  "author": "abderrahmane naab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdou-naab/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/abdou-naab/restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
