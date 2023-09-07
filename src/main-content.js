@@ -1,9 +1,11 @@
-export default function pageLoad() {
-  let content = document.getElementById("content");
-  let header = document.createElement("header");
-  let logo = document.createElement("div");
-  let img_headline = document.createElement("img");
-  let info = document.createElement("p");
+import { DE, createHeader } from "./utils";
 
-  content.append(header, img_headline, info);
+export default function serve(content) {
+  let header = createHeader();
+  let section = new DE("section", "", ["flx"]).create();
+  let div = new DE("div", "", []).create();
+  let h2 = new DE("h2", "Marhaba to Smokey Beards Q", []).create();
+  div.append(h2);
+  section.append(div);
+  content.append(header, section);
 }

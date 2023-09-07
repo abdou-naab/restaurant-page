@@ -1,3 +1,5 @@
 import mainContent from "./main-content";
+import "./static/css/main-content.css";
 
-mainContent();
+let content = document.querySelector("#content");
+mainContent(content);

@@ -5,3 +5,10 @@
 5.create a webpack.config.js file
 6. npx webpack
 - npx webpack --watch you will not have to rerun webpack every time you make a change.
+7 loading css
+- npm install --save-dev style-loader css-loader
+- add rule to webpack config
+- import './style.css' in the js file
+8 loading images 
+- add rule to webpack config
+-import MyImage from './my-image.png' or './icon.png'
