@@ -1,8 +1,12 @@
-import { DE, createHeader } from "./utils";
-// import "./static/css/about-content.css";
+import { DE } from "./utils";
+import styles from "./static/css/about-content.lazy.css";
+export { styles };
 
+import mutah from "./static/images/mutah.jpeg";
 export default function serve(content) {
-  let header = createHeader();
+  let img = new DE("img", "", ["mutah-img"]).create();
+  img.setAttribute("src", mutah);
+  img.setAttribute("alt", "the restaurant owner image");
   let section = new DE("section", "", ["flx"]).create();
   let article = new DE("article", "", ["about"]).create();
   let p = new DE(
@@ -12,9 +16,9 @@ export default function serve(content) {
     []
   ).create();
   let q = new DE("q", "", []).create();
-  let i = new DE("i", "if it ain't brisket, it ain't BBQ',[]").create();
+  let i = new DE("i", "if it ain't brisket, it ain't BBQ'", []).create();
   q.append(i);
   article.append(p, q);
   section.append(article);
-  content.append(header, section);
+  content.append(img, section);
 }

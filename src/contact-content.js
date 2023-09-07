@@ -1,8 +1,8 @@
-import { DE, createHeader } from "./utils";
-// import "./static/css/contact-content.css";
+import { DE } from "./utils";
+import styles from "./static/css/contact-content.lazy.css";
+export { styles };
 
 export default function serve(content) {
-  let header = createHeader();
   let section = new DE("section", "", ["flx"]).create();
   let div = new DE("div", "", ["infos", "flx"]).create();
   let iframe = new DE("iframe", "", ["info", "flx"]).create();
@@ -16,5 +16,5 @@ export default function serve(content) {
   iframe.setAttribute("referrerpolicy", "no-referrer-when-downgrade");
   div.append(iframe, p1, p2);
   section.append(div);
-  content.append(header, section);
+  content.append(section);
 }

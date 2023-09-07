@@ -1,8 +1,8 @@
-import { DE, createHeader } from "./utils";
-// import "./static/css/menu-content.css";
+import { DE } from "./utils";
+import styles from "./static/css/menu-content.lazy.css";
+export { styles };
 
 export default function serve(content) {
-  let header = createHeader();
   let section = new DE("section", "", ["grid-menu"]).create();
 
   section.innerHTML = ` <div class='grid-menu-item'>
@@ -71,5 +71,5 @@ export default function serve(content) {
                             <p>Green Cola</p>
                             <p>8 SAR</p>
                             </div>`;
-  content.append(header, section);
+  content.append(section);
 }
