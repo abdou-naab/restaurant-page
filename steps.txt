@@ -1,0 +1,20 @@
+1. touch .gitignore && echo "node_modules/" >> .gitignore && git rm -r --cached node_modules ; git status
+2. run npm init to generate a package.json file.
+3. npm install webpack webpack-cli --save-dev to install webpack to the node_modules directory.
+4.  link the main.js file in a script tag.
+5.create a webpack.config.js file
+6. npx webpack
+- npx webpack --watch you will not have to rerun webpack every time you make a change.
+7 loading css
+- npm install --save-dev style-loader css-loader
+- add rule to webpack config
+- import './style.css' in the js file
+8 loading images 
+- add rule to webpack config
+-import MyImage from './my-image.png' or './icon.png'
+
+9 each time you need to update your project’s live preview, :  npm run gh-pages. (name set in json file)
+
+note : 
+With style-loader, you could mark some of your css files lazy, and call .use() when mounting the route,
+and .unuse() when unmounting the route.
