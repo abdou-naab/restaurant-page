@@ -1,4 +1,5 @@
 import { DE, createHeader } from "./utils";
+// import "./static/css/main-content.css";
 
 export default function serve(content) {
   let header = createHeader();

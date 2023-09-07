@@ -1,0 +1,71 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  min-height: 500px;
+  background-image: url("./../images/pattern.png");
+}
+.flx {
+  display: flex;
+}
+#content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+header {
+  backdrop-filter: blur(20px);
+  padding: 0 clamp(0.2rem, 8rem, 15vw);
+  justify-content: space-between;
+  background-color: rgb(45 26 20 / 40%);
+  flex-basis: min(6rem, 10vh);
+}
+.logo-size {
+  cursor: pointer;
+  width: max(5rem, 7vw);
+  height: max(5rem, 7vw);
+  border-radius: 50%;
+}
+.buttons {
+  align-items: center;
+  gap: 1rem;
+}
+.buttons button {
+  font-size: min(1.4em, 3vw);
+  padding: 0.6rem 1.2rem;
+  background-color: transparent;
+  border: none;
+  color: #f3d9ca;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.buttons button:hover {
+  border-bottom: 2px solid #f3d9ca;
+  transform: translateY(-3px);
+}
+.buttons button:active {
+  background-color: #f3d9ca;
+  color: rgb(45 26 20);
+  border: none;
+}
+section {
+  flex-grow: 1;
+}
+.grid-menu {
+  gap: 4rem;
+  padding: min(2rem, 6vw) min(4rem, 10vw);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, max(280px, 25vw));
+}
+.grid-menu * {
+  font-size: 1.4rem;
+  height: fit-content;
+  margin: 0.4rem;
+}
+.grid-menu-item {
+  display: grid;
+  grid-template-columns: 73% 27%;
+}
