@@ -73,3 +73,6 @@ section {
 .infos iframe {
   width: fit-content;
 }
+.infos p {
+  margin: 0;
+}
