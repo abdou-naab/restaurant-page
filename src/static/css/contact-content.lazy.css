@@ -19,6 +19,8 @@ body {
   height: 100vh;
 }
 header {
+  flex-wrap: wrap;
+
   padding: 0 clamp(0.2rem, 8rem, 15vw);
   justify-content: space-between;
   backdrop-filter: blur(20px);
