@@ -1,6 +1,6 @@
-1. touch .gitignore && echo "node_modules/" >> .gitignore && git rm -r --cached node_modules ; git status
-2. run npm init to generate a package.json file.
+1. run npm init to generate a package.json file.
 3. npm install webpack webpack-cli --save-dev to install webpack to the node_modules directory.
+3. touch .gitignore && echo "node_modules/" >> .gitignore && git rm -r --cached node_modules ; git status
 4.  link the main.js file in a script tag.
 5.create a webpack.config.js file
 6. npx webpack
