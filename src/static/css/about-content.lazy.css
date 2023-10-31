@@ -15,6 +15,7 @@ body {
   flex-direction: column;
   height: 100vh;
   background-image: url("./../images/pattern.png");
+  overflow-x: auto;
 }
 header {
   flex-wrap: wrap;
@@ -63,10 +64,13 @@ section {
   justify-content: center;
 }
 section article {
+  margin-left: 1.4rem;
   width: 30ch;
   font-size: min(3rem, 6vw, 6vh);
+  text-align: center;
 }
 .mutah-img {
+  object-fit: cover;
   position: fixed;
   width: 50vw;
   height: 100vh;
