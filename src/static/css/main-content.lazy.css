@@ -67,3 +67,12 @@ section div {
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 500px) {
+  .flx {
+    justify-content: center;
+  }
+  header {
+    padding: 0;
+  }
+}
