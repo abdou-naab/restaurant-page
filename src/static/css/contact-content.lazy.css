@@ -78,3 +78,11 @@ section {
 .infos p {
   margin: 0;
 }
+@media (max-width: 500px) {
+  .flx {
+    justify-content: center;
+  }
+  header {
+    padding: 0;
+  }
+}

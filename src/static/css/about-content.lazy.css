@@ -75,3 +75,12 @@ section article {
   width: 50vw;
   height: 100vh;
 }
+
+@media (max-width: 500px) {
+  .flx {
+    justify-content: center;
+  }
+  header {
+    padding: 0;
+  }
+}

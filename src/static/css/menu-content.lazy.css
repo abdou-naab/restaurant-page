@@ -70,3 +70,12 @@ section {
   display: grid;
   grid-template-columns: 73% 27%;
 }
+
+@media (max-width: 500px) {
+  .flx {
+    justify-content: center;
+  }
+  header {
+    padding: 0;
+  }
+}
