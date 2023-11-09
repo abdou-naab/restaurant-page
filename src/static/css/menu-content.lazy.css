@@ -19,7 +19,7 @@ body {
 header {
   flex-wrap: wrap;
   backdrop-filter: blur(20px);
-  padding: 0 clamp(0.2rem, 8rem, 15vw);
+  padding: 0 clamp(0.2rem, 15vw, 8rem);
   justify-content: space-between;
   background-color: rgb(45 26 20 / 40%);
   flex-basis: min(6rem, 10vh);
